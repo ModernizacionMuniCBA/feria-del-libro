@@ -2,9 +2,9 @@
 Aplicacion web/mobile con la agenda de la feria del libro.  
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ModernizacionMuniCBA/feria-del-libro/gh-pages/www/res/screen-mobile-01.png" width="250"/>
-  <img src="https://raw.githubusercontent.com/ModernizacionMuniCBA/feria-del-libro/gh-pages/www/res/screen-mobile-02.png" width="250"/>
-  <img src="https://raw.githubusercontent.com/ModernizacionMuniCBA/feria-del-libro/gh-pages/www/res/screen-mobile-03.png" width="250"/>
+  <img src="https://raw.githubusercontent.com/ModernizacionMuniCBA/feria-del-libro/gh-pages/www/res/screen-mobile-01.png" width="150"/>
+  <img src="https://raw.githubusercontent.com/ModernizacionMuniCBA/feria-del-libro/gh-pages/www/res/screen-mobile-02.png" width="150"/>
+  <img src="https://raw.githubusercontent.com/ModernizacionMuniCBA/feria-del-libro/gh-pages/www/res/screen-mobile-03.png" width="150"/>
 </p>
 
 Ya disponible en el [market de Android](https://play.google.com/store/apps/details?id=ar.gob.cordoba.gobiernoabierto.feriadellibro).    
