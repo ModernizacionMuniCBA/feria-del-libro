@@ -7,6 +7,10 @@ body{
 .navmenu-default, .navbar-default .navbar-offcanvas{
 	background-color: #eee;
 }
+.navmenu-default .navmenu-nav>.active>a:hover {
+	color: white;
+	background-color: #d37e00;
+}
 p{
 	font-size: 1em;
 }
@@ -22,6 +26,11 @@ p{
 .navmenu-nav{
 	margin-top: 20px;
 }
+.menu-icon {
+	margin-bottom: 1px;
+	font-weight: 500;
+	font-size: 10px;
+}
 .navbar-feria .icon-bar{
 	background-color: #fff;
 }
@@ -32,7 +41,8 @@ p{
 }
 .navbar-feria .navbar-toggle span{
 	background-color: #fff;
-	border: 1px ;
+	border: 1px;
+	width: 100%;
 }
 .navbar-feria .navmenu-brand{
 	margin: 8px 0px;
@@ -64,20 +74,13 @@ p{
 	color: #000;
 	border: 1px solid #fff;
 }
-.fixed-img.more_op{
-  opacity: 0.85;
-	
-}
 .fixed-img{
 	position: absolute;
-  background-image: url('../img/image-eventos.png');
-  background-color: #fff; 
-  opacity: 0.5;
-   width: 100%;
-  z-index: 1000;
-  min-height: 150px;
-  background-position: center bottom;
-  background-size: cover;
+	width: 100%;
+	z-index: 1000;
+	min-height: 150px;
+	background-position: center bottom;
+	background-size: cover;
 }
 .fixed-img.home{
   min-height: 200px;
@@ -88,8 +91,12 @@ p{
   -webkit-filter: brightness(65%);
 }
 .foreground{
+	background-image: url('../img/pat1.png');
+    background-repeat: repeat;
+    background-size: contain;
 	position: relative;
 	z-index: 1000;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
 }
 .img-holder{
   background-color: #eee;
@@ -123,6 +130,7 @@ p{
 .text-feria-img{
 	text-transform: uppercase;
 	font-weight: 500;
+    margin-top: 13px;
 }
 .btn-feria{
 	background-color: transparent;
@@ -242,12 +250,12 @@ h1{
  height: 4px;
  margin-top: -5px;
  width: 80%;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2cb6b8+0,009c71+100 */
-background: #009c71; /* Old browsers */
-background: -moz-linear-gradient(left, #2CB6B8 0%, #009c71 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #2CB6B8 0%,#009c71 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #2CB6B8 0%,#009c71 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2CB6B8', endColorstr='#009c71',GradientType=0 ); /* IE6-9 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d37e00+0,c95706+100 */
+background: #d37e00; /* Old browsers */
+background: -moz-linear-gradient(left, #d37e00 0%, #c95706 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #d37e00 0%,#c95706 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #d37e00 0%,#c95706 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d37e00', endColorstr='#c95706',GradientType=1 ); /* IE6-9 */
 
 }
 .navmenu-nav .col-xs-9{
@@ -256,7 +264,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2CB6B8', end
 	color: #777;
 }
 .event-date-time{
-	background-image: url('../img/green-bg.png');
+	background-image: url('../img/orange-bg.png');
 	background-size: cover;
 	width: 100%;
 }
@@ -275,6 +283,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2CB6B8', end
 	text-align: right;
 }
 
+.menu-bg-orange{
+	background-image: url('../img/orange-bg.png'); 
+	width: 100%; 
+	background-size: cover; 
+	height: 35px; 
+	margin-top: -4px;
+}
 .menu-bg-green{
 	background-image: url('../img/green-bg.png'); 
 	width: 100%; 
@@ -290,8 +305,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2CB6B8', end
 }
 
 h1.index-recom{
-	margin-top: 27.5px; 
-	margin-bottom: 0px;
+	margin: 0;
+	line-height: 52px;
 }
 .index-recom-bg{
 	height: 50px; 
@@ -299,8 +314,12 @@ h1.index-recom{
 }
 
 .about{
-	background-color: #000;
+	background-image: url('../img/pat2.png');
 	padding-top: 50px !important;
+}
+
+.nav.navmenu-nav a:hover .col-xs-9 {
+	color: black;
 }
 
 .info-app-version{
@@ -326,27 +345,35 @@ h1.index-recom{
 }
 
 .app-dev{
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin: 10px;
 }
 
 .app-dev h1{
 	font-size: 1.1em;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin:5px;
-    margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
 }
 .app-dev h2{
-	margin: 5px;;
+	margin: 5px 0;
 	font-size: 1em;
-    text-transform: uppercase;
-    font-weight: 600;
+  text-transform: uppercase;
+}
+.app-dev h3{
+	margin: 10px 10px 5px;
+	font-size: 1em;
+}
+
+#fullLog {
+	margin: 5px 10px;
 }
 
 #loading{
 	text-align: center;
 	display: inline;
+}
+.sin-resultados {
+	text-align:center;
 }
 
 .searchField{
@@ -358,8 +385,8 @@ h1.index-recom{
 	padding-top: 5px; 
 	padding-bottom: 5px; 
 	color: #000; 
-	border-top: 5px solid #60B5A3;
-	border-bottom: 5px solid #60B5A3;
+	border-top: 5px solid #d37e00;
+	border-bottom: 5px solid #d37e00;
 	border-left: 1px solid white;
 	border-right: 1px solid white;
 }
@@ -371,6 +398,10 @@ h1.index-recom{
 #event-esp-txt{
 	text-align: center;
 	color: #000;
+}
+
+#event-image {
+	background-position:center;
 }
 
 .page-prev{
