@@ -1,6 +1,6 @@
 	function searchFunc() {
 	  	$(".searchField").css('display', 'inline');
-	  	$(".navbar-feria").css('background-color', '#60B5A3');
+	  	$(".navbar-feria").css('background-color', '#d37e00');
 	  	
 	  	$("#searchField").focus();
 	}

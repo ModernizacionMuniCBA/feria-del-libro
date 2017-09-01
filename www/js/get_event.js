@@ -69,6 +69,25 @@ var gobAbiertoAPI = "https://gobiernoabierto.cordoba.gob.ar/api";
 					$('#tags').append(' | ');
 				}
 			});
+			if (data.precios.length > 0){
+				var precios = "";
+
+				if (data.precios.length == 1 && data.precios[0].grupo.nombre == "Todos" && data.precios[0].valor == "0.00") {
+					precios = "<b>Evento GRATUITO</b>"
+				} else {
+					precios = "<p><b>Precios</b></p><ul>";
+
+					for (var p = 0 ; p < data.precios.length; p++) {
+						var precio = data.precios[p];
+						var descripcion_precio = precio.detalles ? " - "+precio.detalles : "";
+						precios += "<li>"+precio.grupo.nombre+": $"+precio.valor+descripcion_precio+"</li>";
+					}
+
+					precios += "</ul>";
+				}
+
+				$('#event-precios').append(precios);
+			}
 			if (data.imagen.original != undefined){
 				$('#event-image').css("background-image", "url("+data.imagen.original.replace(/^http:\/\//i, 'https://')+")");
 			}

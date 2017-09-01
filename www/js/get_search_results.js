@@ -1,8 +1,6 @@
 var gobAbiertoAPI = "https://gobiernoabierto.cordoba.gob.ar/api";
 		var gobAbiertoAPI_actividades = "/actividad-publica/"
-
 		var gobAbiertoAPI_evento = "?evento_id=16"
-
 		var formatJson = "&format=json";
 		var search = getParameterByName('search'); 
 		var page_eventos = "&page=";
@@ -22,15 +20,15 @@ var gobAbiertoAPI = "https://gobiernoabierto.cordoba.gob.ar/api";
 		function handleData(data) {
 			if (data.count != 0){
 				$.each(data.results, function(i, item) {
-					if (item.image != undefined ){
-				 		var event_image = item.image.thumbnail.replace(/^http:\/\//i, 'https://');	
+					if (item.imagen != undefined && item.imagen.thumbnail != undefined ){
+				 		var event_image = item.imagen.thumbnail.replace(/^http:\/\//i, 'https://');	
 			 		}else{
 				 		var event_image = "img/default-event.png";
 			 		}
 					$('#event-list').append('<div class="row evento"><a href="evento.html#act-'+item.id+'" class="evento"><div class="col-xs-12"><div class="row"><div class="col-xs-3 col-sm-1"><div class="circle-image" style="background-image: url('+event_image+')"></div></div><div class="col-xs-9"><div class="row"><div class="col-xs-12"><h5 class="event-title">'+item.titulo+'</h5></div></div><div class="row"><div class="col-xs-12"><p class="event-date">'+dateFormat(item.inicia, "dddd dd 'de' mmmm, h:MM TT")+'</p></div></div></div></div></div></a></div>');
 				});
 			}else{
-			 	$('#event-list').append('No se encontraron actividades.');
+			 	$('#event-list').append('<p class="sin-resultados">No se encontraron actividades.</p>');
 		 	}
 		 	var htmlPrvNxt = '<div class="row evento"><nav aria-label="..."><ul class="pager">';
 			if (data.previous != null){
