@@ -9,7 +9,7 @@ body{
 }
 .navmenu-default .navmenu-nav>.active>a:hover {
 	color: white;
-	background-color: #d37e00;
+	background-color: #CC268A;
 }
 p{
 	font-size: 1em;
@@ -92,8 +92,8 @@ p{
 }
 .foreground{
 	background-image: url('../img/pat1.png');
-    background-repeat: repeat;
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
 	position: relative;
 	z-index: 1000;
 	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
@@ -252,10 +252,10 @@ h1{
  width: 80%;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d37e00+0,c95706+100 */
 background: #d37e00; /* Old browsers */
-background: -moz-linear-gradient(left, #d37e00 0%, #c95706 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #d37e00 0%,#c95706 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #d37e00 0%,#c95706 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d37e00', endColorstr='#c95706',GradientType=1 ); /* IE6-9 */
+background: -moz-linear-gradient(left, #CC268A 0%, #AB0D5A 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #CC268A 0%,#AB0D5A 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #CC268A 0%,#AB0D5A 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CC268A', endColorstr='#AB0D5A',GradientType=1 ); /* IE6-9 */
 
 }
 .navmenu-nav .col-xs-9{
