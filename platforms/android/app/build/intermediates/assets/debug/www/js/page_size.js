@@ -1,1 +1,0 @@
-var pageSize = 25;

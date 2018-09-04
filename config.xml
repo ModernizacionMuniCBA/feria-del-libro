@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="ar.gob.cordoba.gobiernoabierto.feriadellibro" version="1.18.214" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="ar.gob.cordoba.gobiernoabierto.feriadellibro" version="1.18.216" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Agenda de la Feria</name>
     <description>
         Agenda completa de eventos de la Feria del Libro de la Ciudad de Córdoba 2016
@@ -9,6 +9,7 @@
     </author>
     <content src="index.html" />
     <allow-navigation href="*" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -17,13 +18,9 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <platform name="android">
-        <icon density="hdpi" src="www/res/icono-64x64.png" />
-        <splash density="land-hdpi" src="www/res/splash-app-feria-del-libro.png" />
+        <icon density="hdpi" src="www/res/icono-64x64-2018.png" />
+        <splash density="land-hdpi" src="www/res/splash-app-feria-del-libro-2018.png" />
         <allow-intent href="market:*" />
     </platform>
-    <plugin name="cordova-plugin-whitelist" spec="1" />
-    <plugin name="cordova-plugin-splashscreen" spec="~3.2.2" />
-    <plugin name="cordova-plugin-x-socialsharing" spec="~5.1.3" />
-    <plugin name="cordova-plugin-calendar" spec="~4.5.3" />
-    <engine name="android" spec="~7.0.0" />
+    <engine name="android" spec="^7.0.0" />
 </widget>

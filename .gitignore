@@ -3,6 +3,8 @@
 *.keystore
 to-market.sh
 compiler-cfg.sh
+/platforms
+/node_modules
 
 # Mac
 .DS_Store

@@ -2,28 +2,20 @@
 
 Actualizacion 2018 del compilador de la app
 
-Da error al compilar
-```
-cordova build android
-```
+Da error al compilar la del año pasado por versiones de pluguins y cordova.
 
 ```
-cordova platform update android
-```
-Dice:
-```
-Using cordova-fetch for cordova-android@~7.0.0
-Updating android project...
-(node:26900) UnhandledPromiseRejectionWarning: An in-place platform update is not supported. 
-The `platforms` folder is always treated as a build artifact in the CLI workflow.
-To update your platform, you have to remove, then add your android platform again.
-Make sure you save your plugins beforehand using `cordova plugin save`, and save 
-a copy of the platform first if you had manual changes in it.
-	cordova plugin save
-	cordova platform rm android
-	cordova platform add android
-
+cordova create feria ar.gob.cordoba.gobiernoabierto.feriadellibro FeriaDelLibro
+cordova platform add android
+cordova build
 ```
 
-Ahora la compilacion (básica) funciona OK.
+### Firmar la app
 
+Instrucciones [acá](https://developer.android.com/studio/publish/app-signing).  
+
+cordova build android --release
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore agenda-de-la-feria-key.keystore platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk AgendaDeLaFeria
+
+zipalign -v 4 platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk platforms/android/app/build/outputs/apk/release/AgendaDeLaFeria-release.apk
