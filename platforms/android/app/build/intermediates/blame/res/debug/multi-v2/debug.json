@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/hudson/dev/muni/feria-del-libro/platforms/android/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/hudson/dev/muni/feria-del-libro/platforms/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "170,55,111",
+                        "endColumns": "63,55,58",
+                        "endOffsets": "229,106,165"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,119,175",
+                        "endColumns": "63,55,58",
+                        "endOffsets": "114,170,229"
+                    }
+                }
+            ]
+        }
+    ]
+}
