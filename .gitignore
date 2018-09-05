@@ -5,6 +5,7 @@ to-market.sh
 compiler-cfg.sh
 /platforms
 /node_modules
+/plugins
 
 # Mac
 .DS_Store

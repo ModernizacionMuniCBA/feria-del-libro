@@ -11,7 +11,7 @@ export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 Solo la primera vez:
 ```
-cordova create feria ar.gob.cordoba.gobiernoabierto.feriadellibro FeriaDelLibro
+# para crear la app la primera vez: cordova create feria ar.gob.cordoba.gobiernoabierto.feriadellibro FeriaDelLibro
 cordova platform add android
 ```
 
