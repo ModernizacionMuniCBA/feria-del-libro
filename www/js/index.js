@@ -47,21 +47,18 @@ var app = {
     }
 };
 
-
-
 // detectar si estamos dentro de la app o no
 var inCordova = document.URL.indexOf( 'http://' ) === -1 && document.URL.indexOf( 'https://' ) === -1;
 
 if (inCordova) {
     app.initialize();
-    }
-else 
-    {
+}
+else {
     ga('create', uuid_analytics, 'auto');
-    }
+}
 
 // para llamar desde la app movil, sino va como auto
 window.touchAnalytics = function(page, title){
     app.addLog("touchAnalytics " + page + " -- " + title);
     ga('send', 'pageview', {'page': page,'title': title});
-  };
+};
